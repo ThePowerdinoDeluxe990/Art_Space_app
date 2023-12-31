@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="artwork_title1">Minecraft</string>
+    <string name="artwork_description1">Notch (2009)</string>
+    <string name="moreinfo1">Un juego popular </string>
+
+    <string name="artwork_title2">Homer Barsa</string>
+    <string name="artwork_description2">Un Random (2012)</string>
+    <string name="moreinfo2">Homer version Barcelona </string>
+
+    <string name="artwork_title3">Freddy Fazbear</string>
+    <string name="artwork_description3">Mi primo (2023)</string>
+    <string name="moreinfo3">El personaje del popular videojuego </string>
+
+
+
+</resources>
