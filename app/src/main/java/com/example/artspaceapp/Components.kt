@@ -118,8 +118,6 @@ fun TextArt(
 }
 
 
-
-
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun PreviewElements(){

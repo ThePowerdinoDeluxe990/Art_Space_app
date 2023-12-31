@@ -76,6 +76,7 @@ fun MainApp(){
         else -> R.string.moreinfo3
     }
     Scaffold(
+        containerColor = Color.White,
         bottomBar = {
             ButtonsSelectors(
                 number,
@@ -102,7 +103,7 @@ fun MainApp(){
             Modifier
                 .verticalScroll(rememberScrollState())
                 .fillMaxSize()
-                .background(color = Color.White),
+                ,
             horizontalAlignment = Alignment.CenterHorizontally
         ){
             Spacer(modifier = Modifier.height(30.dp) )
