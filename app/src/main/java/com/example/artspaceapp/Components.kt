@@ -82,15 +82,16 @@ fun TextArt(
         Text(
             stringResource(TitleArt),
             fontSize = 35.sp,
+            color = Color.Black,
             fontWeight = FontWeight.Light,
             modifier = Modifier
                 .padding(10.dp)
-
         )
 
         Text(
             stringResource(DescriptionArt),
             fontWeight = FontWeight.Bold,
+            color = Color.Black,
             modifier = Modifier
                 .padding(horizontal = 10.dp)
         )
@@ -98,6 +99,7 @@ fun TextArt(
         if (SwitchOf == true){
             Text(
                 stringResource(MoreInfo),
+                color = Color.Black,
                 modifier = Modifier
                     .padding(
                         horizontal = 10.dp,15.dp
@@ -106,7 +108,8 @@ fun TextArt(
 
             Text(
                 stringResource(R.string.showless),
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
             )
         }else{
             Text("")
