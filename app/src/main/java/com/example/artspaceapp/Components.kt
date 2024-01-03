@@ -2,6 +2,9 @@ package com.example.artspaceapp
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -70,7 +73,12 @@ fun TextArt(
             .width(300.dp)
             .shadow(4.dp)
             .background(Color(0xffecebf4))
-
+            .animateContentSize(
+                animationSpec = spring(
+                    dampingRatio = Spring.DampingRatioNoBouncy,
+                    stiffness = Spring.StiffnessMedium
+                )
+            )
             .combinedClickable(
                 onClick = { /* Nothing LOL */ },
                 onLongClick = {

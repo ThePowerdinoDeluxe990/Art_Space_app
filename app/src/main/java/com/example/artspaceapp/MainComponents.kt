@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,6 +22,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun ButtonsSelectors(count: Int, onIncrement: () -> Unit, onDecrement: () -> Unit){
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -57,11 +59,11 @@ fun ArtShower(
     @StringRes DescriptionArt:Int,
     @StringRes MoreInfo:Int
 ) {
-    Column{
-        ImageArtShower(ImageArt = ImageArt, DescriptionArt = DescriptionArt)
+        Column {
+            ImageArtShower(ImageArt = ImageArt, DescriptionArt = DescriptionArt)
 
-        Spacer(modifier = Modifier.height(30.dp) )
+            Spacer(modifier = Modifier.height(30.dp))
 
-        TextArt(TitleArt = TitleArt, DescriptionArt = DescriptionArt, MoreInfo = MoreInfo)
-    }
+            TextArt(TitleArt = TitleArt, DescriptionArt = DescriptionArt, MoreInfo = MoreInfo)
+        }
 }

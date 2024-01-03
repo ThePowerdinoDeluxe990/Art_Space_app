@@ -77,7 +77,6 @@ fun MainApp(){
         else -> R.string.moreinfo3
     }
     Scaffold(
-        containerColor = Color.White,
         bottomBar = {
             ButtonsSelectors(
                 number,
